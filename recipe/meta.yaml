@@ -1,5 +1,5 @@
 {% set name = "pyMCR" %}
-{% set version = "0.3.1" %}
+{% set version = "0.3.2" %}
 
 package:
   name: "{{ name|lower }}"
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: d9a2b7c9e1e002d1b2b6f952b1c3cb176e6e9cdb3c685b31431536c817127008
+  sha256: 2192520584d25ee74c9d466e9d9f3f806ca76ff00c0d85cbf6f1fc6932ebe0f8
 
 build:
   number: 0
