@@ -1,18 +1,18 @@
 {% set name = "pyMCR" %}
-{% set version = "0.3.2" %}
+{% set version = "0.5.0" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 2192520584d25ee74c9d466e9d9f3f806ca76ff00c0d85cbf6f1fc6932ebe0f8
+  sha256: 982b169d8b8cca6b28f8df4243e473591adcac3b5af9e3f17455db2d4d481fc1
 
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv "
+  script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv '
 
 requirements:
   host:
