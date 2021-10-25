@@ -37,8 +37,7 @@ test:
 
 about:
   home: https://github.com/usnistgov/pyMCR
-  license: NIST
-  license_family: PUBLIC-DOMAIN
+  license: NIST-PD-fallback
   license_file: LICENSE.md
   summary: Multivariate Curve Resolution in Python
   doc_url: https://pages.nist.gov/pyMCR
