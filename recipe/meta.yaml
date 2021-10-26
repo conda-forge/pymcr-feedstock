@@ -31,8 +31,8 @@ test:
     - pymcr.tests
   requires:
     - pytest
-  commands:
-    - pytest --pyargs pymcr
+#  commands:
+#    - pytest --pyargs pymcr
 
 
 about:
