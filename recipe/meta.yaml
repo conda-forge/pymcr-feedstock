@@ -19,6 +19,7 @@ requirements:
     - pip
     - python {{ python_min }}
     - pytest-runner
+    - setuptools
   run:
     - numpy
     - python >={{ python_min }}
@@ -31,10 +32,9 @@ test:
     - pymcr.tests
   requires:
     - pytest
+    - python {{ python_min }}
 #  commands:
 #    - pytest --pyargs pymcr
-    - python {{ python_min }}
-
 
 about:
   home: https://github.com/usnistgov/pyMCR
